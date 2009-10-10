@@ -1,0 +1,123 @@
+body {
+  width: 800px;
+  margin: auto;
+  background-color: #fafafa;
+}
+#header {
+  text-align: center;
+  margin-bottom: 3em;
+}
+#header #progressbar {
+  border: 1px solid gray;
+  clear: both;
+  background-color: #EEE;
+  height: 1em;
+}
+#header #progressbar div {
+  float: left;
+  height: 1.3em;
+  border: none;
+  text-align: right;
+  text-valign: center;
+  font-size: 0.76em;
+}
+#header #validate-items,
+#header #percentage {
+  font-size: 2em;
+  float: right;
+  color: #666;
+}
+#header #validate-items span.current,
+#header #percentage span.current {
+  font-size: 2em;
+  margin-left: 1em;
+  color: #444;
+}
+
+#content {
+  margin-top: 1em;
+  border:1px solid #999999;
+}
+
+#content #report {
+}
+
+#content #report .page {
+  padding: 0.4em;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+#footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
+}
+/** Status delle pagine **/
+.valid {
+  background-color: #dfd;
+  border-bottom: 1px solid green;
+}
+.warning {
+  background-color: #ffd;
+  border-bottom: 1px solid #990;
+}
+.error {
+  background-color: #fdf;
+  border-bottom: 1px solid brown;
+}
+.unaviable {
+  background-color: #eee;
+  border-bottom: 1px solid gray;
+}
+.valid:hover {
+  background-color: #afa;
+}
+.warning:hover {
+  background-color: #ffa;
+  border-bottom: 1px solid #990;
+}
+.error:hover {
+  background-color: #faa;
+}
+.unaviable:hover {
+  background-color: #BBB;
+}
+.page .num-error,
+.page .num-warning {
+  float: right;
+  padding-left: 25px;
+  height: 22px;
+  width: 25px;
+}
+.page .num-error {
+  background: transparent url(../img/error.png) no-repeat center left;
+}
+.page .num-warning {
+  background: transparent url(../img/warning.png) no-repeat center left;
+}
+
+#filter {
+  margin-top: 2em;
+}
+#filter span {
+  padding: 0.3em;
+  margin: 0.3em;
+}
+#filter span.valid {
+  border: 1px solid green;
+}
+#filter span.warning {
+  border: 1px solid #990;
+}
+#filter span.error {
+  border: 1px solid brown;
+}
+#filter span.unaviable {
+  border: 1px solid gray;
+}
+#filter span.all {
+  border: 1px solid black;
+}
