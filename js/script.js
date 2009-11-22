@@ -41,7 +41,6 @@ $(document).ready(function () {
         $('.num-warning', row).show();
       }
       
-      console.info(data.warning);
       num_validated++;
       percentage();
       $(row).removeClass('to-parse');
